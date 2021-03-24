@@ -4,6 +4,7 @@ theme: default
 backgroundColor: white
 paginate: true
 footer: 'Tikal Academy'
+size: 16:9
 style: |
     
     h1 {
@@ -18,6 +19,7 @@ style: |
     footer {
         color: #f47620;
     }
+
 ---
 <!-- _class: lead -->
 
@@ -25,12 +27,11 @@ style: |
 ## Working with Express
 
 ---
-
 ## Why is Express so popular?
 
-- Simple
-- Powerful
-- Extensible
+* Simple
+* Powerful
+* Extensible
 
 --------
 
@@ -318,22 +319,25 @@ for further reading see [Docker and Node.js Best Practices](https://github.com/n
 
 # Final Project
 
+
 Write a system that collects and displays location check-ins
 
-- Service1
+* Service1
   - Accepts a geo-location as post requests (latitude, longitude) and userId, and timestamp
   - creates a BullMQ job
 
-- Service2 
+* Service2 
   - Processes jobs from the BullMQ:
     - enriches the data with address information (https://locationiq.com/geocoding, https://developers.google.com/maps/documentation/geocoding/start)
     - Create another BullMQ job (different queue)
 
-- Service3
+---
+## Cont. 
+* Service3
   - Process the enriched data from Service2
     - Store in a mongoDB
 
-- Service4
+* Service4
   - Expose the data with a web service
   - Allow to see locations by:
     - userId
