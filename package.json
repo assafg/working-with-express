@@ -1,0 +1,21 @@
+{
+  "name": "working-with-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && npm run -s og-image && npm run -s deck",
+    "deck": "marp --no-stdin index.md -o dist/index.html && cpy \"assets/**/*\" dist/assets",
+    "now-build": "npm run -s deck",
+    "og-image": "marp PITCHME.md -o dist/og-image.jpg",
+    "start": "marp -ps ."
+  },
+  "author": "Assaf Gannon",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.23.3",
+    "cpy-cli": "^3.1.1",
+    "rimraf": "^3.0.2"
+  }
+}
