@@ -1,24 +1,11 @@
 ---
 marp: true
-theme: default
+theme: customized
 backgroundColor: white
 paginate: true
 footer: 'Tikal Academy'
 size: 16:9
-style: |
-    
-    h1 {
-        color: #f47620;
-        font-size: 60px;
-    }
 
-    h2 {
-        font-size: 50px;
-    }
-
-    footer {
-        color: #f47620;
-    }
 
 ---
 <!-- _class: lead -->
@@ -224,17 +211,17 @@ app.get('/example/b', function (req, res, next) {
 
 ## Response Methods
 
-| Method | Description
--|-|-
-`res.download()`|Prompt a file to be downloaded.
-`res.end()`|End the response process.
-`res.json()`|Send a JSON response.
-`res.jsonp()`|Send a JSON response with JSONP support.
-`res.redirect()`|Redirect a request.
-`res.render()`|Render a view template.
-`res.send()`|Send a response of various types.
-`res.sendFile()`|Send a file as an octet stream.
-`res.sendStatus()`|Set the response status code and send its string representation as the response body.
+Method | Description
+:---|:---
+`res.download()` | Prompt a file to be downloaded.
+`res.end()` | End the response process.
+`res.json()` | Send a JSON response.
+`res.jsonp()` | Send a JSON response with JSONP support.
+`res.redirect()` | Redirect a request.
+`res.render()` | Render a view template.
+`res.send()` | Send a response of various types.
+`res.sendFile()` | Send a file as an octet stream.
+`res.sendStatus()` | Set the response status code and send its string representation as the response body.
 
 ------
 
