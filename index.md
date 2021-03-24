@@ -1,11 +1,28 @@
 ---
 marp: true
-theme: customized
+theme: default
 backgroundColor: white
 paginate: true
 footer: 'Tikal Academy'
 size: 16:9
+style: |
+    
+    h1 {
+        color: #f47620;
+        font-size: 60px;
+    }
 
+    h2 {
+        font-size: 50px;
+    }
+
+    footer {
+        color: #f47620;
+    }
+
+    ul li::before {
+        color: #f47620;
+    }
 
 ---
 <!-- _class: lead -->
